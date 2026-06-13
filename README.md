@@ -1,14 +1,25 @@
 # Financial News Sentiment Analyser
 
-Built a Python project to analyse how financial news sentiment correlates 
-with Nifty 50 stock movements.
+Analysed 50 financial news headlines using NLP and mapped sentiment scores 
+against Nifty 50 daily price movements to identify correlations.
 
-Pulled 50 live headlines using NewsAPI, scored them using NLP (TextBlob), 
-and merged the results with daily Nifty 50 price data from yfinance. 
-Visualised the relationship using a dual-axis Matplotlib chart.
+## Tools Used
+Python | Pandas | TextBlob | yfinance | Matplotlib | NewsAPI
 
-**Results:** 50% Neutral, 38% Positive, 12% Negative sentiment. 
-Negative sentiment days generally aligned with market dips.
+## What I Built
+- Fetched live financial news headlines using NewsAPI
+- Scored each headline as Positive / Negative / Neutral using TextBlob (NLP)
+- Pulled Nifty 50 historical data using yfinance
+- Merged sentiment scores with daily stock price % change
+- Built a dual-axis chart showing sentiment vs market movement
 
-**Tools:** Python, Pandas, TextBlob, yfinance, Matplotlib, NewsAPI
+## Key Findings
+- Negative sentiment days correlated with Nifty downward movement
+- 50% Neutral | 38% Positive | 12% Negative headlines overall
+- High positive sentiment days generally aligned with green market days
+
+## Files
+- `sentiment_analyser.ipynb` — main Python notebook
+- `sentiment_vs_nifty.png` — chart output  
+- `sentiment_nifty_analysis.csv` — merged dataset
 
